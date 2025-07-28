@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+*.log
+
+# VSCode
+.vscode/
+
+# Env
+.env
+.venv/
+env/
+venv/
+
+# Cache
+.cache/
+*.whl
+
+# Transcriptions et downloads 
+downloads/
+data/transcriptions/
+
+
