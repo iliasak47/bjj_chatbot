@@ -18,7 +18,7 @@ venv/
 *.whl
 
 # Transcriptions et downloads 
-downloads/
+data/downloads/
 data/transcriptions/
 
 

@@ -3,7 +3,7 @@
 An intelligent chatbot that answers questions about Brazilian Jiu-Jitsu using instructional videos from the top coach, John Danaher
 
 ## Project structure
-
+```text 
 chatbot_bjj/
 ├── data/
 │ ├── downloads/
@@ -21,23 +21,23 @@ chatbot_bjj/
 ├── requirements.txt
 ├── .gitignore
 └── README.md
-
+```
 
 
 ## Installation
 
-1. **Create a virtual environment (optional but recommended)**
+### 1. **Create a virtual environment (optional but recommended)**
 python -m venv venv
 source venv/bin/activate   # Linux/Mac
 venv\Scripts\activate      # Windows
 
-2. **Install the dependencies**
+### 2. **Install the dependencies**
 pip install -r requirements.txt
 
-3. **Start MongoDB**
+### 3. **Start MongoDB**
 Make sure MongoDB is running on localhost:27017.
 
-## Fonctionnement
+## How it works
 Download and transcribe a video using transcribe_bilibili.py
 
 Insert the segments into MongoDB using insert_mongo.py
