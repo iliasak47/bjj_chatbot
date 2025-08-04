@@ -20,5 +20,6 @@ venv/
 # Transcriptions et downloads 
 data/downloads/
 data/transcriptions/
+data/timestamp
 
 

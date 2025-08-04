@@ -4,3 +4,4 @@ numpy
 yt-dlp
 whisper
 openai
+python-dotenv
