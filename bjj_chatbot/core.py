@@ -5,12 +5,19 @@ import numpy as np
 from dotenv import load_dotenv
 from openai import OpenAI
 
+# mongo_uri = os.getenv("CONNECT_URI")
+# if not mongo_uri:
+#     raise ValueError("❌ CONNECT_URI environment variable is not set")
+
+# mongo = MongoClient(mongo_uri)
+
 # Load OpenAI key from .env
 load_dotenv()
 client = OpenAI()
 
 # MongoDB connection
-mongo = MongoClient("mongodb://localhost:27017/")
+mongo_uri = os.getenv("CONNECT_URI")
+mongo = MongoClient(mongo_uri)
 db = mongo["bjj_chatbot"]
 collection = db["segments_blocks"]
 

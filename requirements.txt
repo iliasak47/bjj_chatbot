@@ -1,7 +1,9 @@
 pymongo
 sentence-transformers
 numpy
-yt-dlp
-whisper
 openai
 python-dotenv
+streamlit
+fastapi
+uvicorn
+requests

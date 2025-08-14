@@ -1,0 +1,26 @@
+services:
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile.api
+    container_name: bjj_api
+    restart: unless-stopped
+    env_file: .env
+    environment:
+      - MONGO_URI=${CONNECT_URI}          
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+    ports:
+      - "8000:8000"
+
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile.frontend
+    container_name: bjj_frontend
+    restart: unless-stopped
+    environment:
+      - API_URL=http://api:8000/ask     
+    depends_on:
+      - api
+    ports:
+      - "8501:8501"
